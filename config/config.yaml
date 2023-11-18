@@ -1,0 +1,7 @@
+artifacts_root : artifacts
+
+data_ingestion:
+    root_dir :   artifacts/data_ingestion
+    local_dir : artifacts/data_ingestion/data.zip
+    source_url : https://github.com/Sumukhagc/datasets/raw/main/Metro_Interstate_Traffic_Volume.zip
+    unzip_dir :  artifacts/data_ingestion
