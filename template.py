@@ -31,11 +31,14 @@ list_of_files = [
 ]
 for file in list_of_files:
     path=Path(file)
-    dir_name,file=os.path.split(file)
+    dir_name,filename=os.path.split(file)
     if dir_name!="":
         os.makedirs(dir_name,exist_ok=True)
         logging.info("Directory created at {}".format(dir_name))
+
     if (not os.path.exists(file) or os.path.getsize(file)==0):
-        with open(file,"wb") as f:
+        with open(file,"w") as f:
             logging.info("File created at path {}".format(file))
     
+    else:
+        logging.info("File already exists")
