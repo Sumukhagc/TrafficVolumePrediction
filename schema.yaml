@@ -1,0 +1,11 @@
+
+columns:
+  holiday: object
+  temp: float
+  rain_1h: int
+  snow_1h: int
+  clouds_all: int 
+  weather_main: object
+  weather_description: object
+  date_time: object
+  traffic_volume: int
